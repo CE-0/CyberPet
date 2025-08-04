@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport">
+		<script src="cyberpet_script.js" defer></script>
+		<link rel="stylesheet" href="cyberpet_styles.css">
+		<title>CyberPet Raiser</title>
+	</head>
+	<body>
+		<div class="container">
+		<button id="start-button">PLAY</button>
+		</div>
+		<br>
+		<div class="button-row" id="bottom-buttons">
+			<button id="A">A</button> &emsp;&emsp;
+			<button id="B">B</button> &emsp;&emsp;
+			<button id="C">C</button>
+		</div> 
+		<br>
+		<br>
+		<div id="instructions">
+			<button id="manual-button" onclick="toggleInstructions()">INSTRUCTIONS</button>
+			<br>
+			<textarea disabled id="manual" rows="3" cols="20"></textarea>
+		</div> 
+		<br>
+		<br> 
+		<button id="click-button" onclick="countClicks()">CLICK</button>
+		<p id="click-counter" style="color:white"></p>
+	</body>
+</html>
